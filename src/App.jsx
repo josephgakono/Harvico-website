@@ -13,7 +13,7 @@ const CONTACT_LAST_REQUEST_KEY = 'harvico-contact-last-request'
 function Brand({ light = false }) {
   return <a className={`brand${light ? ' brand-light' : ''}`} href="/" aria-label="Harvico home">
     <span className="brand-mark"><img src="/harvico-mark.png" alt="" /></span>
-    <span>harvico<span className="brand-period">.</span></span>
+    <span>arvico<span className="brand-period">.</span></span>
   </a>
 }
 
@@ -69,7 +69,10 @@ function Layout({ children }) {
 
 function WelcomeSplash() {
   const [visible, setVisible] = useState(() => {
-    try { return window.sessionStorage.getItem('harvico-welcome-seen-v3') !== 'yes' } catch { return true }
+    try {
+      const navigationType = window.performance.getEntriesByType('navigation')[0]?.type
+      return navigationType === 'reload' || window.sessionStorage.getItem('harvico-welcome-seen-v3') !== 'yes'
+    } catch { return true }
   })
   const [leaving, setLeaving] = useState(false)
   useEffect(() => {
