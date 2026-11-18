@@ -75,15 +75,15 @@ function WelcomeSplash() {
   useEffect(() => {
     if (!visible) return undefined
     try { window.sessionStorage.setItem('harvico-welcome-seen-v3', 'yes') } catch { /* Splash still works without storage. */ }
-    const leaveTimer = window.setTimeout(() => setLeaving(true), 2000)
-    const removeTimer = window.setTimeout(() => setVisible(false), 2400)
+    const leaveTimer = window.setTimeout(() => setLeaving(true), 2600)
+    const removeTimer = window.setTimeout(() => setVisible(false), 3000)
     return () => { window.clearTimeout(leaveTimer); window.clearTimeout(removeTimer) }
   }, [visible])
   if (!visible) return null
   return <div className={`welcome-splash${leaving ? ' splash-leaving' : ''}`} role="status" aria-label="Welcome to Harvico">
     <div className="splash-grain" aria-hidden="true" />
     <div className="splash-center">
-      <img src="/harvico-wordmark.png" alt="Harvico" />
+      <div className="splash-wordmark" aria-label="Harvico"><span className="splash-logo"><img src="/harvico-mark.png" alt="" /></span><span>harvico</span></div>
       <div className="splash-seedline" aria-hidden="true"><span /><i>✳</i><span /></div>
       <p>A closer market for every harvest.</p>
     </div>
