@@ -83,7 +83,7 @@ function WelcomeSplash() {
   return <div className={`welcome-splash${leaving ? ' splash-leaving' : ''}`} role="status" aria-label="Welcome to Harvico">
     <div className="splash-grain" aria-hidden="true" />
     <div className="splash-center">
-      <div className="splash-wordmark" aria-label="Harvico"><span className="splash-logo"><img src="/harvico-mark.png" alt="" /></span><span>harvico</span></div>
+      <div className="splash-wordmark" aria-label="Harvico"><span className="splash-logo"><img src="/harvico-mark.png" alt="" /></span><span>arvico</span></div>
       <div className="splash-seedline" aria-hidden="true"><span /><i>✳</i><span /></div>
       <p>A closer market for every harvest.</p>
     </div>
