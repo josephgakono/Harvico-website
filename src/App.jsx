@@ -107,7 +107,7 @@ function PhoneMockup() {
         <div className="phone-section"><b>Popular near you</b><small>See all</small></div>
         <div className="produce-grid">
           <div className="produce-card produce-tomato"><img src="/phone-tomatoes.jpg" alt="Fresh tomatoes" /><b>Tomatoes</b><small>From KSh 80/kg</small></div>
-          <div className="produce-card produce-maize"><img src="/phone-corn.webp" alt="Fresh maize" /><b>Fresh maize</b><small>From KSh 45/pc</small></div>
+          <div className="produce-card produce-maize"><img src="/phone-corn.png" alt="Fresh maize" /><b>Fresh maize</b><small>From KSh 45/pc</small></div>
         </div>
         <div className="farmer-row"><span className="farmer-avatar">👩🏾‍🌾</span><span><b>Mercy’s harvest</b><small>Kiambu · 4.8 ★</small></span><span className="verified">✓</span></div>
         <div className="phone-tabs"><span>⌂<small>Home</small></span><span>♡<small>Saved</small></span><span>▣<small>Orders</small></span><span>◉<small>Profile</small></span></div>
@@ -136,7 +136,7 @@ function HomePage() {
       <div className="hero-bottom"><span>GROWN WITH PURPOSE</span><span className="hero-bottom-line" /><span>BUILT FOR CONNECTION</span><span className="hero-bottom-location">KE <b>·</b> 01°17′S</span></div>
     </section>
 
-    <section className="ticker" aria-label="Marketplace values"><div className="ticker-track">FARM TO MARKET <b>✳</b> PEOPLE BEFORE MIDDLEMEN <b>✳</b> EVERY HARVEST HAS VALUE <b>✳</b> FARM TO MARKET <b>✳</b> PEOPLE BEFORE MIDDLEMEN <b>✳</b></div></section>
+    <section className="ticker" aria-label="Marketplace values"><div className="ticker-track"><span className="ticker-group">FARM TO MARKET <b>✳</b> PEOPLE BEFORE MIDDLEMEN <b>✳</b> EVERY HARVEST HAS VALUE <b>✳</b> FARM TO MARKET <b>✳</b> PEOPLE BEFORE MIDDLEMEN <b>✳</b> EVERY HARVEST HAS VALUE <b>✳</b></span><span className="ticker-group" aria-hidden="true">FARM TO MARKET <b>✳</b> PEOPLE BEFORE MIDDLEMEN <b>✳</b> EVERY HARVEST HAS VALUE <b>✳</b> FARM TO MARKET <b>✳</b> PEOPLE BEFORE MIDDLEMEN <b>✳</b> EVERY HARVEST HAS VALUE <b>✳</b></span></div></section>
 
     <section className="intro-section section-wrap">
       <div className="section-kicker">01 / THE OPPORTUNITY</div>
